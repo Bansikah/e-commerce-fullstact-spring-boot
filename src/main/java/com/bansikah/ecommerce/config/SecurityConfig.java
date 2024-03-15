@@ -16,7 +16,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import static ch.qos.logback.classic.spi.ThrowableProxyVO.build;
 
 @Configuration
-@EnableMethodSecurity(securedEnabled = true)
+@EnableMethodSecurity(securedEnabled = false)
 public class SecurityConfig {
 
     @Bean
@@ -29,10 +29,15 @@ public class SecurityConfig {
         http
                 .authorizeHttpRequests((authorizeHttpRequests) ->
                         authorizeHttpRequests
+                                .requestMatchers("/h2/**", "/h2")
+                                .permitAll()
                                 .anyRequest()
                                 .authenticated()
                 )
-                .httpBasic(Customizer.withDefaults());
+                .httpBasic(Customizer.withDefaults())
+                .csrf(c -> c.ignoringRequestMatchers("/h2/**", "/h2"))
+                .headers(h -> h.frameOptions(f -> f.disable()))
+        ;
         return http.build();
     }
 
