@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.DynamicInsert;
@@ -16,6 +17,7 @@ import org.hibernate.annotations.DynamicUpdate;
 @NoArgsConstructor(force = true)
 @DynamicInsert
 @DynamicUpdate
+@Builder
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,5 +25,4 @@ public class Product {
     private String name;
     private String description;
     private double price;
-
 }

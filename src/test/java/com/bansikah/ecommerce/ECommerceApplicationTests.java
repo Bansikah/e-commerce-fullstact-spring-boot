@@ -25,7 +25,6 @@ class ECommerceApplicationTests {
     @BeforeEach
     void setUp() {
           productService =  new ProductService(
-                  postgres.getJdbcUrl()
           );
     }
 
