@@ -25,8 +25,8 @@ public class ProductController {
 
     //@PreAuthorize("hasRole('ADMIN')")
     @PostMapping
-    public Product createProduct(@RequestBody Product product) {
-        return productService.createProduct(product);
+    public Product save(@RequestBody Product product) {
+        return productService.save(product);
     }
 
     @PutMapping

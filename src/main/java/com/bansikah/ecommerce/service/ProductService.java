@@ -3,7 +3,6 @@ package com.bansikah.ecommerce.service;
 import com.bansikah.ecommerce.domain.Product;
 import com.bansikah.ecommerce.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -25,7 +24,7 @@ public class ProductService {
         productRepository.deleteById(id);
     }
 
-    public Product createProduct(Product product) {
+    public Product save(Product product) {
         return productRepository.save(product);
     }
 }
