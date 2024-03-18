@@ -1,9 +1,6 @@
 package com.bansikah.ecommerce.domain;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,6 +9,7 @@ import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 
@@ -22,6 +20,7 @@ import java.time.LocalDateTime;
 @DynamicInsert
 @DynamicUpdate
 @Builder
+@EntityListeners(AuditingEntityListener.class)
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -30,5 +29,12 @@ public class Product {
     private String description;
     private double price;
 
-
+    @CreatedDate
+    @Column(updatable = false,
+    nullable = false
+    )
+    private LocalDateTime createdDate;
+    @LastModifiedDate
+    @Column(insertable = false)
+    private LocalDateTime modifiedDate;
 }

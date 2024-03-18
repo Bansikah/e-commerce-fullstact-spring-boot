@@ -1,0 +1,103 @@
+2024-03-18 09:40:35.468695+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DATABASECHANGELOGLOCK" not found; SQL statement:
+SELECT COUNT(*) FROM PUBLIC.DATABASECHANGELOGLOCK [42102-224]
+2024-03-18 09:43:54.631892+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (2L,'Product two, 'Product 2[*]', 20.99);"; SQL statement:
+INSERT INTO product (id,name, description, price)
+VALUES (2L,'Product two, 'Product 2', 20.99); [42000-224]
+2024-03-18 09:44:14.107269+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (2L,'Product two, 'second prod[*]', 20.99);"; SQL statement:
+INSERT INTO product (id,name, description, price)
+VALUES (2L,'Product two, 'second prod', 20.99); [42000-224]
+2024-03-18 09:44:15.196368+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (2L,'Product two, 'second prod[*]', 20.99);"; SQL statement:
+INSERT INTO product (id,name, description, price)
+VALUES (2L,'Product two, 'second prod', 20.99); [42000-224]
+2024-03-18 09:44:15.987439+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (2L,'Product two, 'second prod[*]', 20.99);"; SQL statement:
+INSERT INTO product (id,name, description, price)
+VALUES (2L,'Product two, 'second prod', 20.99); [42000-224]
+2024-03-18 09:44:51.261941+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (2L,'Product two, 'Product Two[*]', 20.99);"; SQL statement:
+INSERT INTO product (id,name, description, price)
+VALUES (2L,'Product two, 'Product Two', 20.99); [42000-224]
+2024-03-18 09:44:52.231468+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (2L,'Product two, 'Product Two[*]', 20.99);"; SQL statement:
+INSERT INTO product (id,name, description, price)
+VALUES (2L,'Product two, 'Product Two', 20.99); [42000-224]
+2024-03-18 09:45:32.229457+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (2L[*]'Product two', 'Product Two', 20.99)"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO product (id,name, description, price)
+VALUES (2L'Product two', 'Product Two', 20.99) [42001-224]
+2024-03-18 09:45:33.246535+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (2L[*]'Product two', 'Product Two', 20.99)"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO product (id,name, description, price)
+VALUES (2L'Product two', 'Product Two', 20.99) [42001-224]
+2024-03-18 09:45:33.873648+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (2L[*]'Product two', 'Product Two', 20.99)"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO product (id,name, description, price)
+VALUES (2L'Product two', 'Product Two', 20.99) [42001-224]
+2024-03-18 09:45:34.530400+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (2L[*]'Product two', 'Product Two', 20.99)"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO product (id,name, description, price)
+VALUES (2L'Product two', 'Product Two', 20.99) [42001-224]
+2024-03-18 09:45:39.359977+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (2[*]'Product two', 'Product Two', 20.99)"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO product (id,name, description, price)
+VALUES (2'Product two', 'Product Two', 20.99) [42001-224]
+2024-03-18 09:45:49.886687+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product ([*],name, description, price)\000d\000aVALUES ('Product two', 'Product Two', 20.99)"; expected "identifier"; SQL statement:
+INSERT INTO product (,name, description, price)
+VALUES ('Product two', 'Product Two', 20.99) [42001-224]
+2024-03-18 09:45:50.845039+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product ([*],name, description, price)\000d\000aVALUES ('Product two', 'Product Two', 20.99)"; expected "identifier"; SQL statement:
+INSERT INTO product (,name, description, price)
+VALUES ('Product two', 'Product Two', 20.99) [42001-224]
+2024-03-18 09:45:51.642587+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product ([*],name, description, price)\000d\000aVALUES ('Product two', 'Product Two', 20.99)"; expected "identifier"; SQL statement:
+INSERT INTO product (,name, description, price)
+VALUES ('Product two', 'Product Two', 20.99) [42001-224]
+2024-03-18 09:47:33.712915+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (2L,'Product Two', 'Product Two', 20.99),\000d\000a       (3L[*]'Product Three', 'Product Three Description', 15.50)"; expected "[, ., ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, OR, ,, )"; SQL statement:
+INSERT INTO product (id,name, description, price)
+VALUES (2L,'Product Two', 'Product Two', 20.99),
+       (3L'Product Three', 'Product Three Description', 15.50) [42001-224]
+2024-03-18 09:58:38.398372+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE product\000d\000aSET name = 'Updated Product Name', description = 'Updated Description'\000d\000aWHERE ROW_NUMBER([*]) OVER (ORDER BY id) = 2L"; SQL statement:
+UPDATE product
+SET name = 'Updated Product Name', description = 'Updated Description'
+WHERE ROW_NUMBER() OVER (ORDER BY id) = 2L [42000-224]
+2024-03-18 09:58:47.861710+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE product\000d\000aSET name = 'Updated Product Name', description = 'Updated Description'\000d\000aWHERE ROW_NUMBER([*]) OVER (ORDER BY id) = 2"; SQL statement:
+UPDATE product
+SET name = 'Updated Product Name', description = 'Updated Description'
+WHERE ROW_NUMBER() OVER (ORDER BY id) = 2 [42000-224]
+2024-03-18 10:00:00.020431+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE product\000d\000aSET name = 'Updated Product Name', description = 'Updated Description'\000d\000aWHERE ROW_NUMBER([*]) OVER (ORDER BY id) = 2"; SQL statement:
+UPDATE product
+SET name = 'Updated Product Name', description = 'Updated Description'
+WHERE ROW_NUMBER() OVER (ORDER BY id) = 2 [42000-224]
+2024-03-18 10:00:20.322076+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE product\000d\000aSET name = 'Updated Product Name', description = 'Updated Description'\000d\000aWHERE ROW_NUMBER([*]) OVER (ORDER BY id) = 2L"; SQL statement:
+UPDATE product
+SET name = 'Updated Product Name', description = 'Updated Description'
+WHERE ROW_NUMBER() OVER (ORDER BY id) = 2L [42000-224]
+2024-03-18 10:00:21.870079+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE product\000d\000aSET name = 'Updated Product Name', description = 'Updated Description'\000d\000aWHERE ROW_NUMBER([*]) OVER (ORDER BY id) = 2L"; SQL statement:
+UPDATE product
+SET name = 'Updated Product Name', description = 'Updated Description'
+WHERE ROW_NUMBER() OVER (ORDER BY id) = 2L [42000-224]
+2024-03-18 10:01:30.318979+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE product\000d\000aSET name = 'Updated Product Name', description = 'Updated Description'\000d\000aWHERE ROW_NUMBER([*]) OVER (ORDER BY id) = 2"; SQL statement:
+UPDATE product
+SET name = 'Updated Product Name', description = 'Updated Description'
+WHERE ROW_NUMBER() OVER (ORDER BY id) = 2 [42000-224]
+2024-03-18 10:02:55.439536+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE product\000d\000aSET name = 'Updated Product Name', description = 'Updated Description'\000d\000aWHERE ROW_NUMBER([*]) OVER (ORDER BY id) = 2"; SQL statement:
+UPDATE product
+SET name = 'Updated Product Name', description = 'Updated Description'
+WHERE ROW_NUMBER() OVER (ORDER BY id) = 2 [42000-224]
+2024-03-18 10:07:50.397526+01:00 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (4L,'Product four', 'Product four', 40),[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+INSERT INTO product (id,name, description, price)
+VALUES (4L,'Product four', 'Product four', 40), [42001-224]
