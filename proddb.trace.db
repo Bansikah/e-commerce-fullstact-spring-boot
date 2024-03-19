@@ -101,3 +101,6 @@ WHERE ROW_NUMBER() OVER (ORDER BY id) = 2 [42000-224]
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "INSERT INTO product (id,name, description, price)\000d\000aVALUES (4L,'Product four', 'Product four', 40),[*]"; expected "ROW (, (, DEFAULT, INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
 INSERT INTO product (id,name, description, price)
 VALUES (4L,'Product four', 'Product four', 40), [42001-224]
+2024-03-19 10:57:26.200532+01:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table [*]user (user_id bigint not null, user_email varchar(255), user_name varchar(255), user_password varchar(255), primary key (user_id))"; expected "identifier"; SQL statement:
+create table user (user_id bigint not null, user_email varchar(255), user_name varchar(255), user_password varchar(255), primary key (user_id)) [42001-224]
